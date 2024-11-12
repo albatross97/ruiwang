@@ -9,6 +9,16 @@ export enum Tag {
   DESIGN = 'DESIGN',
 }
 
+export type CardType = {
+  title: string;
+  subtitle?: string;
+  image: string;
+  url: string;
+  label: string;
+  description: string;
+  tag?: Tag;
+};
+
 export const Card = ({
   title,
   subtitle,
@@ -16,16 +26,7 @@ export const Card = ({
   description,
   url,
   image,
-  tag,
-}: {
-  title: string;
-  subtitle?: string;
-  label: string;
-  description: string;
-  url: string;
-  image: string;
-  tag: Tag;
-}) => {
+}: CardType) => {
   const [isExtended, setIsExtended] = useState(false);
   const toggleExtended = useCallback(
     () => setIsExtended(!isExtended),
@@ -33,7 +34,7 @@ export const Card = ({
   );
 
   return (
-    <div className="project shadow-[1px_1px_6px_rgba(0,0,0,0.3)] min-w-[200px] max-w-[275px] h-fit">
+    <div className="project shadow-[1px_1px_6px_rgba(0,0,0,0.3)] h-fit">
       <div
         className="project-basic relative flex justify-center bg-[#5d5d5d] cursor-pointer"
         onClick={toggleExtended}>
@@ -44,8 +45,12 @@ export const Card = ({
           className="opacity-70 grayscale-[80%] hover:opacity-85 hover:grayscale-[50%]"
         />
         {!isExtended && (
-          <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1">
-            <div className="text-primary text-sm font-semibold">{subtitle}</div>
+          <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3">
+            <div
+              className="text-primary text-sm font-semibold"
+              style={{ textShadow: '1px 1px 2px #5d5d5d' }}>
+              {subtitle}
+            </div>
             <div className="text-gray-100 text-base font-medium leading-4">
               {title}‍
             </div>

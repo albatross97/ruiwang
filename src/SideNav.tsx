@@ -35,7 +35,7 @@ export const SideNav = ({ className }: { className: string }) => (
       </NavLink>
     </div>
 
-    <div className="nav-intro font-ubuntu font-light text-sm mt-auto flex flex-col items-center gap-4 w-[230px]">
+    <div className="nav-intro font-ubuntu font-light text-sm mt-auto flex flex-col items-center gap-4 w-[75%]">
       <img
         src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/607f1c89a4c5a2cee40fea56_glasses.png"
         loading="lazy"

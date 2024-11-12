@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import { Button } from './lib/Button';
-import { Card, Tag } from './Card';
+import { Card, CardType, Tag } from './Card';
 
-const CARDS = [
+const CARDS: CardType[] = [
   {
     title: 'Drifting Bottle',
     subtitle: 'MIT WebLab Best UI Award',
@@ -58,6 +58,16 @@ export const Home = () => {
     ? CARDS.filter((card) => card.tag === activeTag)
     : CARDS;
 
+  const chunkedCards = useMemo((): CardType[][] => {
+    return filteredCards.reduce(
+      (columns: CardType[][], card: CardType, index: number) => {
+        columns[index % 3].push(card);
+        return columns;
+      },
+      [[], [], []]
+    );
+  }, [filteredCards]);
+
   return (
     <div className="home-page flex flex-col py-12">
       <div className="top-bar px-[8%] flex flex-col gap-10 pb-4">
@@ -81,21 +91,26 @@ export const Home = () => {
 
       <div className="bg-primary h-[2px] w-full"></div>
 
-      <div className="px-[8%] py-10 flex flex-wrap gap-5">
-        {filteredCards.map(
-          ({ title, subtitle, label, image, url, description, tag }) => (
-            <Card
-              key={title}
-              title={title}
-              subtitle={subtitle}
-              label={label}
-              url={url}
-              image={image}
-              description={description}
-              tag={tag}
-            />
-          )
-        )}
+      <div className="card-list px-[8%] py-10 flex gap-4">
+        {chunkedCards.map((column, columnIndex) => (
+          <div
+            key={columnIndex}
+            className="card-col flex-1 flex flex-col gap-4">
+            {column.map(
+              ({ title, subtitle, label, image, url, description }) => (
+                <Card
+                  key={title}
+                  title={title}
+                  subtitle={subtitle}
+                  label={label}
+                  url={url}
+                  image={image}
+                  description={description}
+                />
+              )
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
