@@ -2,8 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Home } from './Home';
 import { About } from './About';
-import { SideNav } from './SideNav';
+import { SideNav } from './components/SideNav';
 import { Publication } from './Publication';
+import { CityOnDivision } from './projects/CityOnDivision';
+import { Puzzle } from './projects/Puzzle';
+import { TimeTunnel } from './projects/TimeTunnel';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/publication" element={<Publication />} />
             <Route path="/about" element={<About />} />
+            <Route path="/city-on-division" element={<CityOnDivision />} />
+            <Route path="/puzzle" element={<Puzzle />} />
+            <Route path="/time-tunnel" element={<TimeTunnel />} />
           </Routes>
         </div>
       </div>

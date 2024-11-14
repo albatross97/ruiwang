@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
 import { Button } from './lib/Button';
-import { Card, CardType, Tag } from './Card';
+import { Card, CardType, Tag } from './components/Card';
 
 const CARDS: CardType[] = [
   {
@@ -13,7 +13,7 @@ const CARDS: CardType[] = [
     label: 'FULL-STACK',
     description:
       'A full stack website coded by React.js and Node/Express.js for people expressing without social anxiety. Users can share feelings and respond questions with random people.',
-    tag: Tag.FULL_STACK,
+    tag: [Tag.FULL_STACK],
   },
   {
     title: 'Pointiest Path',
@@ -23,7 +23,7 @@ const CARDS: CardType[] = [
     label: 'DATA VISUALIZATION',
     description:
       'An interactive website visualizing a general law of pedestrian navigation in large-scale urban environments across two major US cities using React.js and d3.js.',
-    tag: Tag.DATA_VIZ,
+    tag: [Tag.DATA_VIZ],
   },
   {
     title: 'How is Food Insecurity linked to Migration?',
@@ -33,7 +33,7 @@ const CARDS: CardType[] = [
     label: 'DATA VISUALIZATION',
     description:
       'A scrollytelling data visualization webpage coded by React.js and D3.js that analyzes the relationship between food insecurity and migration in the Northern Triangle.',
-    tag: Tag.DATA_VIZ,
+    tag: [Tag.DATA_VIZ],
   },
   {
     title: 'Police Fatal Shooting',
@@ -43,7 +43,37 @@ const CARDS: CardType[] = [
     label: 'DATA VISUALIZATION',
     description:
       'Fatal shooting by US police is an interactive data visualization webpage coded by html/css and D3.js that analyzes the more than 5,000 deaths by police since 2015.',
-    tag: Tag.DATA_VIZ,
+    tag: [Tag.DATA_VIZ],
+  },
+  {
+    title: 'City on Division',
+    image:
+      'https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6080964f318d23746c05c66a_berlin.jpg',
+    url: '/city-on-division',
+    label: 'MACHINE LEARNING',
+    description:
+      'A visualization analysis of perceptive distinctions of urban environment between West and East Berlin during division and reunion using GIS, and machine learning.',
+    tag: [Tag.MACHINE_LEARNING, Tag.DATA_VIZ],
+  },
+  {
+    title: 'Puzzle',
+    image:
+      'https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6080ec97a07f3d31d3faa499_ar.jpg',
+    url: '/puzzle',
+    label: 'AR/VR',
+    description:
+      'An AR smartphone application, as an interactive design-aid tool customized to the designers’ interest to reassemble the decomposed 3D building model components into a new composition.',
+    tag: [Tag.AR_VR],
+  },
+  {
+    title: 'Time Tunnel',
+    image:
+      'https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6080f3e4791ff3080ebca351_media.jpg',
+    url: '/time-tunnel',
+    label: 'DATA VISUALIZATION',
+    description:
+      'An interactive light installation created interactive visual effects of city landmarks, which are triggered by motion and sound of the participants, thereby bringing the nostalgic memories to local citizens.',
+    tag: [Tag.DATA_VIZ],
   },
 ];
 
@@ -55,7 +85,7 @@ export const Home = () => {
   };
 
   const filteredCards = activeTag
-    ? CARDS.filter((card) => card.tag === activeTag)
+    ? CARDS.filter((card) => card.tag?.includes(activeTag))
     : CARDS;
 
   const chunkedCards = useMemo((): CardType[][] => {

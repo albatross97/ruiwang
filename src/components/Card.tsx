@@ -1,12 +1,12 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 
-import { Button } from './lib/Button';
+import { Button } from '../lib/Button';
 
 export enum Tag {
   FULL_STACK = 'FULL STACK',
   DATA_VIZ = 'DATA VIZ',
   AR_VR = 'AR/VR',
-  DESIGN = 'DESIGN',
+  MACHINE_LEARNING = 'MECHINE LEARNING',
 }
 
 export type CardType = {
@@ -16,7 +16,7 @@ export type CardType = {
   url: string;
   label: string;
   description: string;
-  tag?: Tag;
+  tag?: Tag[];
 };
 
 export const Card = ({
@@ -32,6 +32,10 @@ export const Card = ({
     () => setIsExtended(!isExtended),
     [setIsExtended, isExtended]
   );
+  const isExternalUrl = useMemo(
+    () => url.startsWith('https://') || url.startsWith('http://'),
+    [url]
+  );
 
   return (
     <div className="project shadow-[1px_1px_6px_rgba(0,0,0,0.3)] h-fit">
@@ -42,10 +46,10 @@ export const Card = ({
           src={image}
           loading="lazy"
           sizes="(max-width: 479px) 80vw, (max-width: 767px) 58vw, (max-width: 991px) 18vw, 19vw"
-          className="opacity-70 grayscale-[80%] hover:opacity-85 hover:grayscale-[50%]"
+          className="opacity-70 grayscale-[85%] hover:opacity-85 hover:grayscale-[50%]"
         />
         {!isExtended && (
-          <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3">
+          <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3 pointer-events-none">
             <div
               className="text-primary text-sm font-semibold"
               style={{ textShadow: '1px 1px 2px #5d5d5d' }}>
@@ -72,7 +76,7 @@ export const Card = ({
           <Button variant="outline" asChild>
             <a
               href={url}
-              target="_blank"
+              target={isExternalUrl ? '_blank' : ''}
               className="primary-button cardbutton w-button">
               &gt;&gt; Explore More
             </a>

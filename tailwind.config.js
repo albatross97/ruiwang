@@ -17,6 +17,7 @@ module.exports = {
         border: 'hsl(var(--border))',
         dark: 'var(--dark)',
         light: 'var(--light)',
+        pink: 'var(--pink)',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

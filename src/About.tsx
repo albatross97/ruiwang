@@ -1,3 +1,5 @@
+import { Button } from './lib/Button';
+
 export const About = () => {
   return (
     <div className="about-page flex flex-col gap-4 text-[#000] py-10">
@@ -80,19 +82,21 @@ export const About = () => {
           <div className="grid gap-x-[30px] gap-y-4 grid-cols-[.5fr_1fr_.5fr]">
             <p className="company">
               <strong>Foursquare</strong> <br />
-              Software Engineer II
+              <em>Software Engineer II</em>
             </p>
-            <p className="position flex flex-col gap-1">
+            <ol className="position flex flex-col gap-1 list-disc list-outside">
               <li className="position-detail">
                 Led frontend development for a cloud based geospatial workspace
-                using Typescript, React, Redux, Next.js and Node.js, empowering
-                clients to process and unify geospatial data for advanced
-                analysis and fluid visualization.
+                using{' '}
+                <strong>Typescript, React, Redux, Next.js and Node.js</strong>,
+                empowering clients to process and unify geospatial data for
+                advanced analysis and fluid visualization.
               </li>
               <li className="position-detail">
                 Owned the implementation of SQL query parameters, enabling users
-                to edit, bookmark, and perform SQL queries against cloud
-                databases like Databricks, Postgres and GCP.
+                to edit, bookmark, and perform <strong>SQL</strong> queries
+                against cloud databases like{' '}
+                <strong>Databricks, Postgres and GCP</strong>.
               </li>
               <li className="position-detail">
                 Launched impactful UI/UX features, including customizable 3D
@@ -100,16 +104,17 @@ export const About = () => {
                 close collaboration with engineers, designers, and product
                 managers.
               </li>
-            </p>
+            </ol>
             <p className="location text-right">
               San Francisco, CA
               <br />
               Apr 2023 - Present
             </p>
             <p className="company">
-              <strong>Foursquare</strong> <br /> Software Engineer Intern
+              <strong>Foursquare</strong> <br />{' '}
+              <em>Software Engineer Intern</em>
             </p>
-            <p className="position flex flex-col gap-1">
+            <ol className="position flex flex-col gap-1 list-disc list-outside">
               <li className="position-detail">
                 Prototyped a UI builder for customizing business insights
                 dashboards using Typescript, React, Redux and Node.js
@@ -120,7 +125,7 @@ export const About = () => {
                 in under 2 months, establishing it as a pivotal project for the
                 company.
               </li>
-            </p>
+            </ol>
             <p className="location text-right">
               Seattle, WA
               <br />
@@ -128,9 +133,9 @@ export const About = () => {
             </p>
             <p className="company">
               <strong>MIT Senseable City Lab</strong> <br />
-              Research Assistant
+              <em>Research Assistant</em>
             </p>
-            <p className="position flex flex-col gap-1">
+            <ol className="position flex flex-col gap-1 list-disc list-outside">
               <li className="position-detail">
                 Designed and developed an interactive data visualization website
                 on pedestrian navigation using React and D3.js for a lab
@@ -140,16 +145,16 @@ export const About = () => {
                 Partnered with researchers to improve user engagement by
                 creating a first-person perspective map.
               </li>
-            </p>
+            </ol>
             <p className="location text-right">
               Cambridge, MA <br />
               Oct 2021 - July 2021
             </p>
             <p className="company">
               <strong>MIT Design Heritage Lab </strong> <br />
-              Research Assistant
+              <em>Research Assistant</em>
             </p>
-            <p className="position flex flex-col gap-1">
+            <ol className="position flex flex-col gap-1 list-disc list-outside">
               <li className="position-detail">
                 Conducted a web page to promote the digital exhibition
                 experience for over 1000 museum visitors.
@@ -158,7 +163,7 @@ export const About = () => {
                 Built the feature of 3D file conversion via Three.js to
                 accelerate website model loading by 50%.
               </li>
-            </p>
+            </ol>
             <p className="location text-right">
               Cambridge, MA <br />
               Nov 2020 - Apr 2021
@@ -195,6 +200,39 @@ export const About = () => {
               Construction Competition
             </p>
             <p className="time text-right">2016</p>
+          </div>
+        </div>
+
+        <div className="skill">
+          <h3 className="text-primary text-lg font-bold mb-3">SKILL</h3>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              Javascript/Typescript
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              Python
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              React
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              Redux
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              Node.js
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              SQL
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              MongoDB
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              D3.js
+            </Button>
+            <Button variant="secondary" size="sm" className="w-fit text-sm">
+              HTML/CSS
+            </Button>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-import { Button } from './lib/Button';
-import { cn } from './lib/utils';
+import { Button } from '../lib/Button';
+import { cn } from '../lib/utils';
 
 export const SideNav = ({ className }: { className: string }) => (
   <div
@@ -9,9 +9,7 @@ export const SideNav = ({ className }: { className: string }) => (
       'side-nav shadow-[2px_2px_13px_rgba(0,0,0,0.3)] flex flex-col items-center px-12 py-20 gap-7 bg-background',
       className
     )}>
-    <h1 className="text-center font-ubuntu text-[30px] font-medium">
-      RUI WANG
-    </h1>
+    <h1 className="text-center font-ubuntu text-3xl font-medium">RUI WANG</h1>
 
     <div className="flex flex-col gap-2 w-36 flex-grow">
       <NavLink to="/">
