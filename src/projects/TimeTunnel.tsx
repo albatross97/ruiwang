@@ -53,11 +53,13 @@ export const TimeTunnel = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e26a7edb1ccfcff1588c_bridge5.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 className="px-20"
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082dcb57602d0371e028ca5_bridge.jpg"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -70,10 +72,12 @@ export const TimeTunnel = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e1952000ab15927e2a83_bridge2.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e19ce3d48dc89c6398d5_bridge3.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -93,6 +97,7 @@ export const TimeTunnel = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e1fc2a20799c2f46b2d9_bridge4.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -105,6 +110,7 @@ export const TimeTunnel = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e4364ccb2d01932e20d3_Screen%20Shot%202021-04-23%20at%2011.13.31%20AM.png"
                 loading="lazy"
+                alt=""
               />
               <p className="flex flex-col gap-8">
                 <div>
@@ -136,6 +142,7 @@ export const TimeTunnel = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e5f75d30dbf9d1e614d1_Screen%20Shot%202021-04-23%20at%2011.21.20%20AM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>

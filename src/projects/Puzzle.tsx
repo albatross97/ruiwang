@@ -45,6 +45,7 @@ export const Puzzle = () => {
             <img
               src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6081f873d36ae1e5acaca8f5_ar1.png"
               loading="lazy"
+              alt=""
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -55,6 +56,7 @@ export const Puzzle = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608209e3c998e82429fb49dc_Screen%20Shot%202021-04-22%20at%207.42.16%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -67,6 +69,7 @@ export const Puzzle = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60820b17b21fc642151a354a_Screen%20Shot%202021-04-22%20at%207.44.00%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -90,6 +93,7 @@ export const Puzzle = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082105e62022832ef92e51d_ar4.png"
                 loading="lazy"
+                alt=""
               />
               <div className="flex items-end gap-4">
                 <img
@@ -97,12 +101,14 @@ export const Puzzle = () => {
                   src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60820c7f0986d8adb067c4ba_Screen%20Shot%202021-04-22%20at%207.52.37%20PM.png"
                   loading="lazy"
                   sizes="(max-width: 479px) 21vw, (max-width: 991px) 23vw, (max-width: 1919px) 24vw, 25vw"
+                  alt=""
                 />
                 <img
                   className="w-[50%]"
                   src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60820c828d9aab04116831ad_Screen%20Shot%202021-04-22%20at%207.52.46%20PM.png"
                   loading="lazy"
                   sizes="(max-width: 479px) 21vw, (max-width: 991px) 23vw, (max-width: 1919px) 24vw, 25vw"
+                  alt=""
                 />
               </div>
             </div>

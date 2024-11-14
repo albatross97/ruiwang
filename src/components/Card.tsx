@@ -47,6 +47,7 @@ export const Card = ({
           loading="lazy"
           sizes="(max-width: 479px) 80vw, (max-width: 767px) 58vw, (max-width: 991px) 18vw, 19vw"
           className="opacity-70 grayscale-[85%] hover:opacity-85 hover:grayscale-[50%]"
+          alt=""
         />
         {!isExtended && (
           <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3 pointer-events-none">
@@ -77,6 +78,7 @@ export const Card = ({
             <a
               href={url}
               target={isExternalUrl ? '_blank' : ''}
+              rel="noreferrer"
               className="primary-button cardbutton w-button">
               &gt;&gt; Explore More
             </a>

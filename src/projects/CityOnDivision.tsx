@@ -63,10 +63,12 @@ export const CityOnDivision = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608233c40a301068ae56b45b_Screen%20Shot%202021-04-22%20at%2010.40.50%20PM.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608233c84491dc3d8bcd7631_Screen%20Shot%202021-04-22%20at%2010.40.31%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -79,6 +81,7 @@ export const CityOnDivision = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608230c594a7a34e48b78596_Screen%20Shot%202021-04-22%20at%2010.27.25%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -106,14 +109,17 @@ export const CityOnDivision = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608236839967a1275524baec_berlin1.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082368ad257af1e06f60e35_berlin2.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608234a28a6d2106019ccdec_Screen%20Shot%202021-04-22%20at%2010.44.17%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -126,10 +132,12 @@ export const CityOnDivision = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60822ea7a9614147d2ecda17_heat1.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60822e42a9614171cdecd4d1_heat2.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -142,10 +150,12 @@ export const CityOnDivision = () => {
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082351dad7f06c307279cd4_Screen%20Shot%202021-04-22%20at%2010.46.15%20PM.png"
                 loading="lazy"
+                alt=""
               />
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/608235259967a1001e24b5be_Screen%20Shot%202021-04-22%20at%2010.46.26%20PM.png"
                 loading="lazy"
+                alt=""
               />
             </div>
           </div>
@@ -212,6 +222,7 @@ export const CityOnDivision = () => {
                 <img
                   src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/60822a1ba10d9fef88a0cbea_con4.jpg"
                   loading="lazy"
+                  alt=""
                 />
               </div>
             </div>
