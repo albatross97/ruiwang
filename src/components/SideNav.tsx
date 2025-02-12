@@ -6,7 +6,7 @@ import { cn } from '../lib/utils';
 export const SideNav = ({ className }: { className: string }) => (
   <div
     className={cn(
-      'side-nav sm:shadow-[2px_2px_13px_rgba(0,0,0,0.3)] flex sm:flex-col items-center sm:px-12 sm:py-20 gap-7 bg-background border-b-4 border-primary',
+      'side-nav sm:shadow-[2px_2px_13px_rgba(0,0,0,0.3)] flex sm:flex-col items-center sm:px-12 sm:py-20 gap-7 bg-background border-b-4 border-primary sm:border-none',
       className
     )}>
     <h1 className="text-center font-ubuntu text-3xl font-medium hidden sm:flex">
@@ -45,17 +45,18 @@ export const SideNav = ({ className }: { className: string }) => (
       </NavLink>
     </div>
 
-    <div className="nav-intro font-ubuntu font-light text-sm mt-auto  flex-col items-center gap-4 w-[75%] hidden lg:flex">
+    <div className="nav-intro font-ubuntu font-light text-sm mt-auto flex flex-col items-center p-2 gap-4">
       <img
         src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/607f1c89a4c5a2cee40fea56_glasses.png"
         loading="lazy"
         alt=""
       />
-      <div>
+      <div className="hidden lg:flex lg:flex-col gap-1">
         <span className="font-medium">Nice to meet you!</span>
-        <br />
-        I’m Rui Wang, a software engineer interested in interactive data
-        visualization, a designer passionate about user experience.
+        <p>
+          I’m Rui Wang, a software engineer interested in interactive data
+          visualization, a designer passionate about user experience.
+        </p>
       </div>
     </div>
   </div>

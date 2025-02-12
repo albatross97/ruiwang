@@ -68,25 +68,29 @@ export const Card = ({
       </div>
 
       {isExtended && (
-        <div className="card bg-white p-[20px] flex flex-col gap-4">
-          <div>
-            <div className="card-name font-bold text-xl leading-5 mb-1">
-              {title}
+        <div className="card bg-white p-[20px]">
+          <div className="flex flex-col gap-4 transition-all duration-500 ease-out opacity-0 animate-[fadeIn_0.3s_ease-out_forwards]">
+            <div>
+              <div className="card-name font-bold text-xl leading-5 mb-1">
+                {title}
+              </div>
+              <span className="card-label text-primary font-medium">
+                {label}
+              </span>
             </div>
-            <span className="card-label text-primary font-medium">{label}</span>
+            <div className="card-description">
+              {description} <br />
+            </div>
+            <Button variant="outline" asChild>
+              <a
+                href={url}
+                target={isExternalUrl ? '_blank' : ''}
+                rel="noreferrer"
+                className="primary-button cardbutton w-button">
+                &gt;&gt; Explore More
+              </a>
+            </Button>
           </div>
-          <div className="card-description">
-            {description} <br />
-          </div>
-          <Button variant="outline" asChild>
-            <a
-              href={url}
-              target={isExternalUrl ? '_blank' : ''}
-              rel="noreferrer"
-              className="primary-button cardbutton w-button">
-              &gt;&gt; Explore More
-            </a>
-          </Button>
         </div>
       )}
     </div>
