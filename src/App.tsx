@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <div className="flex min-h-screen w-full bg-[#f3f3f3]">
-        <SideNav className="w-[28%] h-screen fixed" />
-        <div className="content ml-[28%] w-[72%] min-h-screen overflow-y-auto">
+        <SideNav className="w-full sm:w-[28%] sm:h-screen fixed top-0 z-50" />
+        <div className="content mt-10 sm:mt-0 sm:ml-[28%] sm:w-[72%] min-h-screen overflow-y-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/publication" element={<Publication />} />

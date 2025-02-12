@@ -1,4 +1,17 @@
-import { Button } from '../lib/Button';
+import { ProjectIntro } from '../components/InfoGrid';
+
+const CITY_ON_DIVISION_INTRO = {
+  tags: ['Data Visualization', 'Machine Learning'],
+  abstract:
+    'This project focuses on the influence of ideology on the urban development of Berlin before and after reunification. By analyzing such factors as greenery, sky exposure, road, vehicle, color difference, and facade feature, we compared the evolution difference between West and East Berlin, which sheds dark on the future urban design of an integrated Berlin.',
+  info: {
+    DATE: '09/2019',
+    TYPE: 'Collaboration',
+    ROLE: 'Collaborator',
+    CONTRIBUTOR: 'Liu Haoyu',
+    SUPERVISOR: 'Prof. Li Wenjing',
+  },
+};
 
 export const CityOnDivision = () => {
   return (
@@ -11,43 +24,7 @@ export const CityOnDivision = () => {
         <div className="bg-pink h-[2px] w-full"></div>
 
         <div className="px-[14%] flex flex-col gap-16">
-          <div className="flex gap-8">
-            <div className="flex flex-col gap-2 flex-1">
-              <div className="flex gap-3 w-fit">
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  className="bg-pink border-pink hover:bg-pink cursor-default">
-                  Data Visualization
-                </Button>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  className="bg-pink border-pink">
-                  Machine Learning
-                </Button>
-              </div>
-              <p>
-                This project focuses on the influence of ideology on the urban
-                development of Berlin before and after reunification. By
-                analyzing such factors as greenery, sky exposure, road, vehicle,
-                color difference, and facade feature, we compared the evolution
-                difference between West and East Berlin, which sheds dark on the
-                future urban design of an integrated Berlin.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 text-pink w-40 text-xs mt-auto h-fit">
-              <span>DATE:</span> <span className="text-right">09/2019</span>
-              <span>TPYE:</span>
-              <span className="text-right">Collaboration</span>
-              <span>ROLE:</span>
-              <span className="text-right">Collaborator</span>
-              <span>CONTRIBUTOR:</span>
-              <span className="text-right">Liu Haoyu</span>
-              <span>SUPERVISOR: </span>
-              <span className="text-right">Prof. Li Wenjing</span>
-            </div>
-          </div>
+          <ProjectIntro data={CITY_ON_DIVISION_INTRO} />
 
           <div className="flex flex-col gap-4">
             <div className="font-medium text-xl text-pink border-t-2 border-pink">

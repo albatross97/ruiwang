@@ -49,20 +49,24 @@ export const Card = ({
           className="opacity-70 grayscale-[85%] hover:opacity-85 hover:grayscale-[50%]"
           alt=""
         />
-        {!isExtended && (
-          <div className="project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3 pointer-events-none">
-            <div
-              className="text-primary text-sm font-semibold"
-              style={{ textShadow: '1px 1px 2px #5d5d5d' }}>
-              {subtitle}
-            </div>
-            <div className="text-gray-100 text-base font-medium leading-4">
-              {title}‍
-            </div>
-            <div className="text-xs text-gray-100">{label}</div>
+
+        <div
+          className={`project-name absolute bottom-0 text-center mb-[10%] w-full flex flex-col gap-1 px-3 pointer-events-none 
+            transition-opacity duration-100 ${
+              isExtended ? 'opacity-0' : 'opacity-100'
+            }`}>
+          <div
+            className="text-primary text-sm font-semibold"
+            style={{ textShadow: '1px 1px 2px #5d5d5d' }}>
+            {subtitle}
           </div>
-        )}
+          <div className="text-gray-100 text-base font-medium leading-4">
+            {title}‍
+          </div>
+          <div className="text-xs text-gray-100">{label}</div>
+        </div>
       </div>
+
       {isExtended && (
         <div className="card bg-white p-[20px] flex flex-col gap-4">
           <div>

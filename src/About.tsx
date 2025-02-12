@@ -46,7 +46,7 @@ export const About = () => {
       <div className="px-[8%] py-5 flex flex-col gap-10">
         <div className="education">
           <h3 className="text-primary text-lg font-bold mb-3">EDUCATION</h3>
-          <div className="grid gap-x-[30px] gap-y-4 grid-cols-[.5fr_1fr_.5fr]">
+          <div className="grid gap-x-[30px] gap-y-4 md:grid-cols-[.5fr_1fr_.5fr] sm:grid-cols-1">
             <p className="school">
               <strong>Massachusetts Institute of Technology</strong>
             </p>
@@ -79,7 +79,7 @@ export const About = () => {
 
         <div className="experience">
           <h3 className="text-primary text-lg font-bold mb-3">EXPERIENCE</h3>
-          <div className="grid gap-x-[30px] gap-y-4 grid-cols-[.5fr_1fr_.5fr]">
+          <div className="grid gap-x-[30px] gap-y-4 md:grid-cols-[.5fr_1fr_.5fr] sm:grid-cols-1">
             <p className="company">
               <strong>Foursquare</strong> <br />
               <em>Software Engineer II</em>

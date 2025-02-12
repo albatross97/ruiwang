@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import { Button } from './lib/Button';
 import { Card, CardType, Tag } from './components/Card';
@@ -84,6 +84,20 @@ export const Home = () => {
     setActiveTag(tag === activeTag ? null : tag);
   };
 
+  const [numColumns, setColumns] = useState(3);
+
+  useEffect(() => {
+    const updateColumns = () => {
+      const width = window.innerWidth;
+      setColumns(width > 900 ? 3 : width > 600 ? 2 : 1);
+    };
+
+    updateColumns(); // Set initial value
+    window.addEventListener('resize', updateColumns);
+
+    return () => window.removeEventListener('resize', updateColumns);
+  }, []);
+
   const filteredCards = activeTag
     ? CARDS.filter((card) => card.tag?.includes(activeTag))
     : CARDS;
@@ -91,12 +105,12 @@ export const Home = () => {
   const chunkedCards = useMemo((): CardType[][] => {
     return filteredCards.reduce(
       (columns: CardType[][], card: CardType, index: number) => {
-        columns[index % 3].push(card);
+        columns[index % numColumns].push(card);
         return columns;
       },
-      [[], [], []]
+      Array.from({ length: numColumns }, () => [])
     );
-  }, [filteredCards]);
+  }, [filteredCards, numColumns]);
 
   return (
     <div className="home-page flex flex-col py-12">

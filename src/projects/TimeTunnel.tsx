@@ -1,4 +1,17 @@
-import { Button } from '../lib/Button';
+import { ProjectIntro } from '../components/InfoGrid';
+
+const TIME_TUNNEL_INTRO = {
+  tags: ['Data Visualization'],
+  abstract:
+    'There is always a gap between preservation and development. We used media technology to build a time tunnel, in wish to bridge the gap in the process of urban development. Demolished heritages of city landmarks were designed with interactive visual effects triggered by the motion and sound, thereby bringing the nostalgic memories to local citizens and also marking the city for visitors.',
+  info: {
+    DATE: '07/2017',
+    TYPE: 'Collaboration',
+    ROLE: 'Team leader',
+    CONTRIBUTOR: 'Changqing Ye, Yifan Shen, et al.',
+    SUPERVISOR: 'Prof. Takehiko Nagakura',
+  },
+};
 
 export const TimeTunnel = () => {
   return (
@@ -10,39 +23,7 @@ export const TimeTunnel = () => {
 
         <div className="px-[14%] flex flex-col gap-24">
           <div className="flex flex-col gap-4">
-            <div className="flex gap-8">
-              <div className="flex flex-col gap-2 flex-1">
-                <div className="flex gap-3 w-fit">
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    className="bg-pink border-pink hover:bg-pink cursor-default">
-                    Data Visualization
-                  </Button>
-                </div>
-                <p>
-                  There is always a gap between preservation and development. We
-                  used media technology to build a time tunnel, in wish to
-                  bridge the gap in the process of urban development. Demolished
-                  heritages of city landmarks were designed with interactive
-                  visual effects triggered by the motion and sound, thereby
-                  bringing the nostalgic memories to local citizens and also
-                  marking the city for visitors.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 text-pink w-42 text-xs mt-auto h-fit">
-                <span>DATE:</span> <span className="text-right">07/2017</span>
-                <span>TPYE:</span>
-                <span className="text-right">Collaboration</span>
-                <span>ROLE:</span>
-                <span className="text-right">Team leader</span>
-                <span>CONTRIBUTOR:</span>
-                <span className="text-right">Zhang Qiao, Tao Lizi</span>
-                <span>SUPERVISOR: </span>
-                <span className="text-right">Prof. Takehiko Nagakura</span>
-              </div>
-            </div>
+            <ProjectIntro data={TIME_TUNNEL_INTRO} />
           </div>
 
           <div className="flex flex-col gap-4">
@@ -106,7 +87,7 @@ export const TimeTunnel = () => {
             <div className="font-medium text-xl text-pink border-t-2 border-pink">
               FURTHER REJUVENATION BY MEDIA TECHNOLOGY
             </div>
-            <div className="flex gap-8">
+            <div className="flex gap-8 max-lg:flex-col">
               <img
                 src="https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6082e4364ccb2d01932e20d3_Screen%20Shot%202021-04-23%20at%2011.13.31%20AM.png"
                 loading="lazy"
