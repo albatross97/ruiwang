@@ -10,7 +10,7 @@ import { TimeTunnel } from './projects/TimeTunnel';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className="flex min-h-screen w-full bg-[#f3f3f3]">
         <SideNav className="w-full sm:w-[28%] sm:h-screen fixed top-0 z-50" />
         <div className="content mt-10 sm:mt-0 sm:ml-[28%] sm:w-[72%] min-h-screen overflow-y-auto">
