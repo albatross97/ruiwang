@@ -110,6 +110,7 @@ export const Puzzle = () => {
               </p>
               <div className="w-full h-full aspect-w-16 aspect-h-9">
                 <iframe
+                  title="Puzzle"
                   src="https://www.youtube.com/embed/IxsbcX3faro?si=RFbuQevIK9oLwN2W"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

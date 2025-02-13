@@ -39,6 +39,7 @@ export const MiesSketch = () => {
 
           <div className="w-full h-full aspect-w-16 aspect-h-9">
             <iframe
+              title="MiesSketch"
               src="https://www.youtube.com/embed/8dTp011k6Tg?si=x0eFWE9OpIYz-kRt"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

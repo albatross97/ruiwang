@@ -140,6 +140,7 @@ export const TimeTunnel = () => {
               </p>
               <div className="w-full h-full aspect-w-16 aspect-h-9">
                 <iframe
+                  title="TimeTunnel"
                   src="https://www.youtube.com/embed/3__M7xT8P6k?si=sL_DM0BW53ZM8ZMk"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
