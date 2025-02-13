@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ruiwang/static/css/main.72cd1ac4.css",
+    "main.js": "/ruiwang/static/js/main.9c3681cc.js",
+    "index.html": "/ruiwang/index.html",
+    "main.72cd1ac4.css.map": "/ruiwang/static/css/main.72cd1ac4.css.map",
+    "main.9c3681cc.js.map": "/ruiwang/static/js/main.9c3681cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72cd1ac4.css",
+    "static/js/main.9c3681cc.js"
+  ]
+}
