@@ -75,6 +75,16 @@ const CARDS: CardType[] = [
       'An interactive light installation created interactive visual effects of city landmarks, which are triggered by motion and sound of the participants, thereby bringing the nostalgic memories to local citizens.',
     tag: [Tag.DATA_VIZ],
   },
+  {
+    title: 'Mies’s Sketch',
+    image:
+      'https://cdn.prod.website-files.com/604d92a8fa436349d81f2cb5/6080964fcf8467dad795ea35_mies.jpg',
+    url: '/mies-sketch',
+    label: 'DATA VISUALIZATION',
+    description:
+      'An interactive roaming project coded by C# in Unity that allows users to explore the unbuilt project of Mies’s between 2D sketches and 3D scenes by controlling a player.',
+    tag: [Tag.DATA_VIZ],
+  },
 ];
 
 export const Home = () => {

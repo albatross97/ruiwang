@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 
 import { Button } from '../lib/Button';
+import { NavLink } from 'react-router-dom';
 
 export enum Tag {
   FULL_STACK = 'FULL STACK',
@@ -82,13 +83,13 @@ export const Card = ({
               {description} <br />
             </div>
             <Button variant="outline" asChild>
-              <a
-                href={url}
+              <NavLink
+                to={url}
                 target={isExternalUrl ? '_blank' : ''}
                 rel="noreferrer"
-                className="primary-button cardbutton w-button">
+                className="w-full">
                 &gt;&gt; Explore More
-              </a>
+              </NavLink>
             </Button>
           </div>
         </div>

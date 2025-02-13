@@ -7,6 +7,7 @@ import { Publication } from './Publication';
 import { CityOnDivision } from './projects/CityOnDivision';
 import { Puzzle } from './projects/Puzzle';
 import { TimeTunnel } from './projects/TimeTunnel';
+import { MiesSketch } from './projects/MiesSketch';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/city-on-division" element={<CityOnDivision />} />
             <Route path="/puzzle" element={<Puzzle />} />
             <Route path="/time-tunnel" element={<TimeTunnel />} />
+            <Route path="/mies-sketch" element={<MiesSketch />} />
           </Routes>
         </div>
       </div>

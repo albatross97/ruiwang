@@ -132,20 +132,18 @@ export const TimeTunnel = () => {
             <div className="font-medium text-xl text-pink border-t-2 border-pink">
               DEMO
             </div>
-            <div className="flex gap-8">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/3__M7xT8P6k?si=sL_DM0BW53ZM8ZMk"
-                title="YouTube"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-              <div className="w-[40%]">
+            <div className="flex gap-8 flex-col">
+              <p>
                 Audio interaction and motion interaction are two functions
                 working together to create an interactive experience for
                 participators.
+              </p>
+              <div className="w-full h-full aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/3__M7xT8P6k?si=sL_DM0BW53ZM8ZMk"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen></iframe>
               </div>
             </div>
           </div>

@@ -101,21 +101,19 @@ export const Puzzle = () => {
             <div className="font-medium text-xl text-pink border-t-2 border-pink">
               DEMO
             </div>
-            <div className="flex gap-8">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/IxsbcX3faro?si=RFbuQevIK9oLwN2W"
-                title="YouTube"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-              <div className="w-[40%]">
+            <div className="flex flex-col gap-8">
+              <p>
                 Arrange physical markers as identifiers for virtual pieces into
                 right positions, then select AR puzzle pieces from menu at the
                 lower left corner. Transform the puzzle pieces on the phone
                 screen by finger touching.
+              </p>
+              <div className="w-full h-full aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/IxsbcX3faro?si=RFbuQevIK9oLwN2W"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen></iframe>
               </div>
             </div>
           </div>
